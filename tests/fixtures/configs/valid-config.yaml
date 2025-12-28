@@ -1,0 +1,25 @@
+version: "1.0.0"
+
+architecture:
+  layers:
+    - name: presentation
+      path: src/presentation/**
+      canImportFrom: [domain, infrastructure]
+    
+    - name: domain
+      path: src/domain/**
+      canImportFrom: []
+    
+    - name: infrastructure
+      path: src/infrastructure/**
+      canImportFrom: [domain]
+
+protectedRegions:
+  - path: src/domain/entities/**
+    reason: "Domain entities - architect approval required"
+    aiMutable: false
+
+bannedDependencies:
+  - package: lodash
+    reason: "Use native ES6+ methods"
+    alternatives: [native-methods]

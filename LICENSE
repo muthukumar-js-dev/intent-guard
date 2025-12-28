@@ -1,21 +1,85 @@
-MIT License
+Intent-Guard Proprietary License
+Version 1.0, December 2025
 
 Copyright (c) 2025 Muthu Kumar
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+TERMS AND CONDITIONS
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. DEFINITIONS
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+"Software" refers to the Intent-Guard package, including all source code, 
+documentation, and associated files.
+
+"Use" means installing and executing the Software as an npm package dependency 
+in your applications.
+
+"Redistribute" means to copy, distribute, publish, or make available the 
+Software or any portion thereof to third parties.
+
+2. GRANT OF RIGHTS
+
+Subject to the terms and conditions of this License, you are granted a 
+non-exclusive, non-transferable, worldwide license to:
+
+a) Install and use the Software via npm or other package managers in your 
+   applications (commercial or non-commercial)
+
+b) Report issues, request features, ask questions, participate in discussions, 
+   and sponsor the project through GitHub or other official channels
+
+c) Read the source code for understanding, debugging, and integration purposes
+
+3. RESTRICTIONS
+
+You may NOT:
+
+a) Copy, duplicate, or redistribute the Software or any portion thereof, 
+   except as necessary for normal npm package installation and caching
+
+b) Reverse engineer, decompile, or disassemble the Software, except to the 
+   extent that such activity is expressly permitted by applicable law
+
+c) Publish, republish, or distribute the Software under a different name or 
+   as part of another package
+
+d) Create derivative works based on the Software
+
+e) Remove or alter any copyright notices, license information, or other 
+   proprietary notices contained in the Software
+
+f) Use the Software in any way that competes with the original Software
+
+4. OWNERSHIP
+
+The Software is licensed, not sold. Muthu Kumar retains all right, title, 
+and interest in and to the Software, including all intellectual property rights.
+
+5. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+6. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.
+
+7. TERMINATION
+
+This License is effective until terminated. Your rights under this License 
+will terminate automatically without notice if you fail to comply with any 
+of its terms. Upon termination, you must cease all use of the Software and 
+destroy all copies in your possession.
+
+8. GENERAL
+
+This License constitutes the entire agreement between the parties concerning 
+the Software. If any provision of this License is held to be unenforceable, 
+such provision shall be reformed only to the extent necessary to make it 
+enforceable.
+
+For licensing inquiries or commercial use questions, please contact:
+https://github.com/muthu-kumar369/intent-guard

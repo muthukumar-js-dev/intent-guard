@@ -1,0 +1,15 @@
+version: "1.0.0"
+
+architecture:
+  layers:
+    - name: layer-a
+      path: src/a/**
+      canImportFrom: [layer-b]
+    
+    - name: layer-b
+      path: src/b/**
+      canImportFrom: [layer-c]
+    
+    - name: layer-c
+      path: src/c/**
+      canImportFrom: [layer-a]  # Circular: a -> b -> c -> a

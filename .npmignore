@@ -1,0 +1,22 @@
+# Source files
+src/
+tests/
+examples/
+scripts/
+
+# Config files
+tsconfig.json
+tsconfig.build.json
+jest.config.js
+.eslintrc.js
+.prettierrc
+.npmignore
+
+# Other
+coverage/
+gemini-prompts/
+verify-realtime.ts
+out_debug.txt
+out_ps.txt
+implementation_plan.md
+task.md

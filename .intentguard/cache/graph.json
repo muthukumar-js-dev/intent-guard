@@ -1,0 +1,905 @@
+{
+  "version": "1.0.0",
+  "entries": {
+    "D:\\npm\\intent-guard\\src\\cli\\index.ts": {
+      "hash": "8c71b69ecd16c35e1e5f3e1bec97460420df87ef9ede5c60ff0411e398858418",
+      "imports": [
+        {
+          "module": "commander",
+          "line": 3,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "Command"
+          ]
+        },
+        {
+          "module": "chalk",
+          "line": 4,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "chalk"
+          ],
+          "isDefault": true
+        },
+        {
+          "module": "../index",
+          "line": 5,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "VERSION"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\index"
+        },
+        {
+          "module": "./commands/init-command",
+          "line": 6,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "InitCommand"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\cli\\commands\\init-command"
+        },
+        {
+          "module": "./commands/validate-command",
+          "line": 7,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "ValidateCommand"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\cli\\commands\\validate-command"
+        },
+        {
+          "module": "./commands/rules-for-command",
+          "line": 8,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "RulesForCommand"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\cli\\commands\\rules-for-command"
+        },
+        {
+          "module": "./error-handler",
+          "line": 9,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "ErrorHandler"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\cli\\error-handler"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\cli\\error-handler.ts": {
+      "hash": "343a4d48d8c25bebacf1ed63347de2d8ddc30701cb4323b3e593dd43b2fb9402",
+      "imports": [
+        {
+          "module": "chalk",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "chalk"
+          ],
+          "isDefault": true
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\cli\\formatters\\output-formatter.ts": {
+      "hash": "5d5afb7826847efbdb57d45757e5164acfcff418f819983b2e151df7d9e68989",
+      "imports": [
+        {
+          "module": "chalk",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "chalk"
+          ],
+          "isDefault": true
+        },
+        {
+          "module": "../../types",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "ValidationResult",
+            "Violation"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\cli\\formatters\\index.ts": {
+      "hash": "18e064b057da2c9d2ccd1a6c9f0a85928da96f1083577fc879070a2f9fcb33cd",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\cli\\commands\\validate-command.ts": {
+      "hash": "1151501a83125f2ff840c58dee67b2ba1241ccf1ec41a7f27c82eecb7c576799",
+      "imports": [
+        {
+          "module": "chalk",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "chalk"
+          ],
+          "isDefault": true
+        },
+        {
+          "module": "./base-command",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "BaseCommand"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\cli\\commands\\base-command"
+        },
+        {
+          "module": "../../core/graph",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "DependencyGraphBuilder"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\graph"
+        },
+        {
+          "module": "../../core/cache/file-cache",
+          "line": 4,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "FileCache"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\cache\\file-cache"
+        },
+        {
+          "module": "../../core/memory/memory-manager",
+          "line": 5,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "MemoryManager"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\memory\\memory-manager"
+        },
+        {
+          "module": "../../core/validators",
+          "line": 6,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "LayerBoundaryValidator",
+            "ProtectedRegionsValidator",
+            "BannedDependenciesValidator"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\validators"
+        },
+        {
+          "module": "../formatters",
+          "line": 11,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "OutputFormatter"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\cli\\formatters"
+        },
+        {
+          "module": "../../utils/git",
+          "line": 12,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "GitUtils"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\utils\\git"
+        },
+        {
+          "module": "../error-handler",
+          "line": 13,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "CLIError"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\cli\\error-handler"
+        },
+        {
+          "module": "../../types",
+          "line": 14,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "ValidationResult",
+            "Violation",
+            "DependencyGraph"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\cli\\commands\\rules-for-command.ts": {
+      "hash": "1b00afc985ec5114ad36c9178abd45936df0754bc7df58ec0230d9978a1580bb",
+      "imports": [
+        {
+          "module": "path",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "./base-command",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "BaseCommand"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\cli\\commands\\base-command"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\cli\\commands\\init-command.ts": {
+      "hash": "fb8fcc9eaffda15d308879219a60e6662ed4ab7ce57daa926cea83d4dfe25184",
+      "imports": [
+        {
+          "module": "fs",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "fs"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "path",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "chalk",
+          "line": 3,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "chalk"
+          ],
+          "isDefault": true
+        },
+        {
+          "module": "./base-command",
+          "line": 4,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "BaseCommand"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\cli\\commands\\base-command"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\cli\\commands\\index.ts": {
+      "hash": "a1836514f7140dca3c19b9629d6bef01e71d5bed381e6a0e13527eff12643ae6",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\cli\\commands\\base-command.ts": {
+      "hash": "f8d6ed31d0501e1c3bc91ddfc7d53265d846972cbf5301477aa64d27dc28edd6",
+      "imports": [
+        {
+          "module": "../../config",
+          "line": 1,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "ConfigLoader"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\config"
+        },
+        {
+          "module": "../../types",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IntentGuardConfig"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        },
+        {
+          "module": "../error-handler",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "CLIError"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\cli\\error-handler"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\core\\index.ts": {
+      "hash": "877ac39d450a1721e07cec77ec083f4b5c96c6a2a58b48b771de9a8e2619d6fb",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\core\\validators\\protected-regions-validator.ts": {
+      "hash": "e649c40bb5b5dc6743b69e3deb8a90d05e2d538b8a046123df65667dc5a7b17c",
+      "imports": [
+        {
+          "module": "path",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "glob",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "glob"
+          ]
+        },
+        {
+          "module": "../../types",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IntentGuardConfig",
+            "ValidationResult",
+            "Violation"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\core\\validators\\layer-boundary-validator.ts": {
+      "hash": "17d57e0cf9f39eebaf16b1225f1b6d479be05aaddf60da061324a87053fd40be",
+      "imports": [
+        {
+          "module": "../../types",
+          "line": 1,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IntentGuardConfig",
+            "ValidationResult",
+            "Violation",
+            "DependencyGraph"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        },
+        {
+          "module": "path",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\core\\validators\\index.ts": {
+      "hash": "9f88477c22fa1422598e0ea679fcf263207552c8d8b33c5f49e880810edf3692",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\core\\validators\\banned-dependencies-validator.ts": {
+      "hash": "e2f56deac7e17c14a5b9c93741f5a3f0ab8837109ec0ba6048cc2f25a77e70ce",
+      "imports": [
+        {
+          "module": "../../types",
+          "line": 1,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IntentGuardConfig",
+            "ValidationResult",
+            "Violation",
+            "DependencyGraph"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        },
+        {
+          "module": "../parsers",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "ParserFactory"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\parsers"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\core\\parsers\\typescript-parser.ts": {
+      "hash": "9125a35f2477257167f773934002e631e89161306b762883031251cbcbed028a",
+      "imports": [
+        {
+          "module": "typescript",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "ts"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "fs",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "fs"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "path",
+          "line": 3,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "./types",
+          "line": 4,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IParser",
+            "FileAnalysis",
+            "ImportInfo",
+            "ExportInfo",
+            "FunctionInfo",
+            "ClassInfo"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\parsers\\types"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\core\\parsers\\types.ts": {
+      "hash": "d105f6d114924f18aee1403391cb831d6e3b8d9ee97561706842a46f8d615da2",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\core\\parsers\\parser-factory.ts": {
+      "hash": "5f80016880768a091b29e25c33b31a54735e37e97e70994df0da7344b4fbc97b",
+      "imports": [
+        {
+          "module": "./types",
+          "line": 1,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IParser"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\parsers\\types"
+        },
+        {
+          "module": "./typescript-parser",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "TypeScriptParser"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\parsers\\typescript-parser"
+        },
+        {
+          "module": "./javascript-parser",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "JavaScriptParser"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\parsers\\javascript-parser"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\core\\parsers\\javascript-parser.ts": {
+      "hash": "1b24ea58bafc99e03462e9921e61aad5dc7e7e46c2e1e36ff9328f5ffc7789f6",
+      "imports": [
+        {
+          "module": "@babel/parser",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "parser"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "@babel/traverse",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "traverse"
+          ],
+          "isDefault": true
+        },
+        {
+          "module": "fs",
+          "line": 3,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "fs"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "path",
+          "line": 4,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "./types",
+          "line": 5,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IParser",
+            "FileAnalysis",
+            "ImportInfo",
+            "ExportInfo",
+            "FunctionInfo",
+            "ClassInfo"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\parsers\\types"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\core\\parsers\\index.ts": {
+      "hash": "b03f25ac372c93129c67a9544e190445fabef097ea8ea06ae407889a3101ccac",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\core\\graph\\index.ts": {
+      "hash": "79ab797206746747394c766dc3a1c039d0a43eb26f18ed255d5a189d8c3abe45",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\core\\graph\\dependency-graph-builder.ts": {
+      "hash": "79f87eee5fbef67cf9473099f3784e8c759d05d14c048aaa299d5d9e0ae93034",
+      "imports": [
+        {
+          "module": "fs",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "fs"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "path",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "glob",
+          "line": 3,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "glob"
+          ]
+        },
+        {
+          "module": "minimatch",
+          "line": 4,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "minimatch"
+          ]
+        },
+        {
+          "module": "../parsers",
+          "line": 5,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "ParserFactory"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\parsers"
+        },
+        {
+          "module": "../../types",
+          "line": 6,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IntentGuardConfig",
+            "LayerDefinition",
+            "DependencyGraph",
+            "GraphNode",
+            "GraphEdge"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        },
+        {
+          "module": "../cache/file-cache",
+          "line": 7,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "FileCache"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\cache\\file-cache"
+        },
+        {
+          "module": "../cache/hash-utils",
+          "line": 8,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "computeFileHash"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\core\\cache\\hash-utils"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\core\\cache\\hash-utils.ts": {
+      "hash": "82d13384f04c9af2708cdbc14a370e84a63bf30f4bc298a33c1a0e6689d19b9a",
+      "imports": [
+        {
+          "module": "crypto",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "crypto"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "fs",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "fs"
+          ],
+          "isNamespace": true
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\core\\cache\\file-cache.ts": {
+      "hash": "05dc2da929b4c11aa81a556e10ea9633bc17dfe2fcbfa47489c248218164a705",
+      "imports": [
+        {
+          "module": "fs",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "fs"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "path",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "../../types",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "CacheData",
+            "CacheEntry"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\config\\validator.ts": {
+      "hash": "ea3e1b29e83c8bd271d9cc998ca4388bb5f83aa665a8307f303f4329078d5214",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\config\\schema.ts": {
+      "hash": "0c974063993c8619c0d54b3c585f0b1548ffa718bd3b4b821a0ac3b6a1e874eb",
+      "imports": [
+        {
+          "module": "../types",
+          "line": 1,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IntentGuardConfig"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\config\\loader.ts": {
+      "hash": "6b2fefd20ff328ab8a8960b5205aeb966ea7df015fdb631b95f22c02b40a628a",
+      "imports": [
+        {
+          "module": "fs",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "fs"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "path",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "yaml",
+          "line": 3,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "yaml"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "../types",
+          "line": 4,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IntentGuardConfig",
+            "LayerDefinition"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        },
+        {
+          "module": "./schema",
+          "line": 5,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "CONFIG_SCHEMA",
+            "DEFAULT_CONFIG"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\config\\schema"
+        },
+        {
+          "module": "./validator",
+          "line": 6,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "validateSchema"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\config\\validator"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\config\\index.ts": {
+      "hash": "d3b52f82f67e81fa45c023f16109ebf25b6382b1396494a53cbdc8f1ee5fb561",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\utils\\index.ts": {
+      "hash": "c32aa1a994ce32569fbd23598f6da3fa393bb7f9a403b28c38ebf612738ab7d1",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\utils\\git.ts": {
+      "hash": "14b2e11b275209d85970eef14a480b09c7210816304656d1a01dca33722502a4",
+      "imports": [
+        {
+          "module": "child_process",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "execSync"
+          ]
+        },
+        {
+          "module": "path",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\src\\types\\index.ts": {
+      "hash": "1e04cf2871f6a6e493f43016f55d8ff672b864bf6a2a93bda59de9e13069f0d4",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\src\\core\\memory\\memory-manager.ts": {
+      "hash": "0eac0b8bc3b1ca14a899030a42d8f71443326e256bf72936f690280e0a149461",
+      "imports": [
+        {
+          "module": "fs",
+          "line": 1,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "fs"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "path",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "path"
+          ],
+          "isNamespace": true
+        },
+        {
+          "module": "../../types",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "MemoryData",
+            "ValidationSummary"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\src\\types"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+version: "1.0.0"
+
+architecture:
+  layers:
+    - name: cli
+      path: src/cli/**
+      canImportFrom: [core, config, utils, types]
+    
+    - name: core
+      path: src/core/**
+      canImportFrom: [config, utils, types]
+    
+    - name: config
+      path: src/config/**
+      canImportFrom: [types, utils]
+    
+    - name: utils
+      path: src/utils/**
+      canImportFrom: [types]
+    
+    - name: types
+      path: src/types/**
+      canImportFrom: []
+
+protectedRegions:
+  - path: src/types/index.ts
+    reason: "Core type definitions - changes require architecture review"
+    aiMutable: true

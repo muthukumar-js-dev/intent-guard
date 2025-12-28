@@ -1,0 +1,36 @@
+name: ❓ Question / Feedback
+description: Ask a question or provide general feedback
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question or feedback? We're here to help!
+        
+        **Note**: For open-ended discussions or early ideas, consider using [GitHub Discussions](https://github.com/muthu-kumar369/intent-guard/discussions) instead.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or Feedback
+      description: What would you like to know or share?
+      placeholder: "I'm wondering how to... / I noticed that..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context (Optional)
+      description: Provide any additional context that might help us understand your question.
+      placeholder: "I'm working on a project where..."
+
+  - type: checkboxes
+    id: documentation-check
+    attributes:
+      label: Documentation Check
+      description: Have you checked the existing documentation?
+      options:
+        - label: I have checked the README and documentation
+          required: false

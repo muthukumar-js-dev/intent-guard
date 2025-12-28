@@ -1,0 +1,6 @@
+version: "1.0.0"
+
+architecture:
+  # layers field is missing entirely
+  notLayers: []
+

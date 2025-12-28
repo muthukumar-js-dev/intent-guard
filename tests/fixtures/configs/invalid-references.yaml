@@ -1,0 +1,7 @@
+version: "1.0.0"
+
+architecture:
+  layers:
+    - name: presentation
+      path: src/presentation/**
+      canImportFrom: [domain, nonexistent-layer]

@@ -1,0 +1,9 @@
+version: "1.0.0"
+architecture:
+  layers:
+    - name: domain
+      path: src/domain/**
+      canImportFrom: []
+    - name: infrastructure
+      path: src/infrastructure/**
+      canImportFrom: [domain]

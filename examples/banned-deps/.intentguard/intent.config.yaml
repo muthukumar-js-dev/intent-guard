@@ -1,0 +1,10 @@
+version: "1.0.0"
+architecture:
+  layers:
+    - name: api
+      path: src/api/**
+      canImportFrom: []
+bannedDependencies:
+  - package: lodash
+    reason: "Use native methods"
+    alternatives: ["Array.prototype"]

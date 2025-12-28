@@ -1,0 +1,10 @@
+version: "1.0.0"
+architecture:
+  layers:
+    - name: core
+      path: src/core/**
+      canImportFrom: []
+protectedRegions:
+  - path: src/core/types.ts
+    reason: "Critical types"
+    aiMutable: false

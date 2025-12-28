@@ -1,0 +1,7 @@
+version: "1.0.0"
+architecture:
+  layers:
+    - name: test
+      path: src/**
+      canImportFrom: []
+invalid yaml syntax here: [unclosed bracket
