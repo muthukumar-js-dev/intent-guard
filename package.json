@@ -1,7 +1,7 @@
 {
   "name": "intent-guard",
   "version": "0.1.0",
-  "description": "Deterministic architectural controller for AI-generated code validation",
+  "description": "Prevent AI coding assistants from breaking your architecture. Validates AI-generated code against layer boundaries, protected regions, and dependency rules.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
@@ -15,6 +15,10 @@
     "url": "https://github.com/muthu-kumar369/intent-guard/issues"
   },
   "homepage": "https://github.com/muthu-kumar369/intent-guard#readme",
+  "funding": {
+    "type": "individual",
+    "url": "https://buymeacoffee.com/muthukumar"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "dev": "tsc -p tsconfig.build.json --watch",
@@ -26,16 +30,26 @@
     "prepublishOnly": "npm run build"
   },
   "keywords": [
-    "ai",
-    "architecture",
-    "validation",
-    "linter",
-    "guardrails",
-    "intent",
+    "ai-code-validation",
+    "ai-guardrails",
+    "architecture-validation",
+    "layer-boundaries",
+    "ai-coding-assistant",
+    "code-architecture",
+    "ai-code-guard",
+    "architectural-linter",
+    "cursor",
+    "copilot",
+    "windsurf",
+    "clean-architecture",
+    "hexagonal-architecture",
+    "protected-code",
+    "dependency-rules",
+    "ai-code-quality",
     "static-analysis",
-    "code-quality",
-    "ai-coding",
-    "architectural-boundaries"
+    "monorepo-validation",
+    "typescript-validation",
+    "javascript-validation"
   ],
   "author": "Muthu Kumar",
   "license": "PROPRIETARY",

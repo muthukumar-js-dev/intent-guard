@@ -1,0 +1,47 @@
+
+version: "1.0.0"
+
+architecture:
+  layers:
+    - name: shared
+      path: src/shared/**
+      canImportFrom: []
+      description: "Shared Kernel: Value Objects, Results, Errors. Strictly isolated."
+
+    - name: domain
+      path: src/domain/**
+      canImportFrom: [shared]
+      description: "Domain Layer: Pure business logic. Depends ONLY on Shared."
+
+    - name: application
+      path: src/application/**
+      canImportFrom: [domain, shared]
+      description: "Application Layer: Orchestration. Can use Domain and Shared."
+
+    - name: infrastructure
+      path: src/infrastructure/**
+      canImportFrom: [application, domain, shared]
+      description: "Infrastructure Layer: Implementation details. Can import everything needed to implement interfaces."
+
+    - name: api
+      path: src/api/**
+      canImportFrom: [application, shared, infrastructure] 
+      description: "API Layer: Entry point. Should primarily use Application Services."
+
+protectedRegions:
+  - path: src/domain/account.ts
+    reason: "Core Banking Logic. AI modifying this risks duplication or currency errors."
+    aiMutable: false
+
+  - path: src/shared/money.ts
+    reason: "Critical Financial Math. Precision errors here are catastrophic."
+    aiMutable: false
+
+bannedDependencies:
+  - package: lodash
+    reason: "Use native Array/Object methods instead to keep bundle size low."
+    alternatives: [native]
+
+  - package: axios
+    reason: "Use native fetch() for HTTP requests."
+    alternatives: [fetch]

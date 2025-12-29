@@ -1,0 +1,393 @@
+{
+  "version": "1.0.0",
+  "entries": {
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\result.ts": {
+      "hash": "9523ba100c88d7fb7dc17f7e30af1e3b003d1918e4e0be2017229de2f4cbd10c",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\money.ts": {
+      "hash": "6e1fb9108a47a8e19804dc79b5af291b3b8deef72da39048184f357f00ec2887",
+      "imports": [
+        {
+          "module": "./result",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Result"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\result"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\errors.ts": {
+      "hash": "6429c820c561bf072dfb7a65fe49500c806542d17025670b46f65f011cf6e2d8",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\transaction.ts": {
+      "hash": "9d9972d90a811133a5a83e8bf4140e79cacd18e958e6c89d8cac64796b6f975c",
+      "imports": [
+        {
+          "module": "../shared/money",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Money"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\money"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\repositories.ts": {
+      "hash": "de2e4ff4d00d9b65e70faff948c68d2b644ef2eac8de60b8e8a7ed5758b8e968",
+      "imports": [
+        {
+          "module": "./account",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Account"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\account"
+        },
+        {
+          "module": "./transaction",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Transaction"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\transaction"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\account.ts": {
+      "hash": "b94b9402fcafa379ac099a77d8ec86e35c61d77d4cec4aa78d7db5aa04a99668",
+      "imports": [
+        {
+          "module": "../shared/money",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Money"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\money"
+        },
+        {
+          "module": "../shared/result",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Result"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\result"
+        },
+        {
+          "module": "../shared/errors",
+          "line": 4,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "InsufficientFundsError"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\errors"
+        },
+        {
+          "module": "./transaction",
+          "line": 5,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Transaction",
+            "TransactionType"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\transaction"
+        },
+        {
+          "module": "uuid",
+          "line": 6,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "uuidv4"
+          ]
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\application\\transfer-service.ts": {
+      "hash": "a09d85781ec20937782c8cde2e12fba7b8f9a70042b82779e580055c305315ae",
+      "imports": [
+        {
+          "module": "../domain/repositories",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IAccountRepository",
+            "ITransactionRepository"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\repositories"
+        },
+        {
+          "module": "../shared/money",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Money"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\money"
+        },
+        {
+          "module": "../shared/result",
+          "line": 4,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Result"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\result"
+        },
+        {
+          "module": "./notification-service",
+          "line": 5,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "INotificationService"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\application\\notification-service"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\application\\notification-service.ts": {
+      "hash": "3945c74891bdd03dd673906e14f8693058aec133cc4ba623c4bab102cab580b2",
+      "imports": []
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\application\\account-service.ts": {
+      "hash": "a354cb7625112ae569c631531c10b3212f5621e9fd3c29f6b3b853167540455d",
+      "imports": [
+        {
+          "module": "../domain/repositories",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IAccountRepository"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\repositories"
+        },
+        {
+          "module": "../domain/account",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Account"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\account"
+        },
+        {
+          "module": "../shared/money",
+          "line": 4,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Money",
+            "Currency"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\money"
+        },
+        {
+          "module": "../shared/result",
+          "line": 5,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Result"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\result"
+        },
+        {
+          "module": "./notification-service",
+          "line": 6,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "INotificationService"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\application\\notification-service"
+        },
+        {
+          "module": "uuid",
+          "line": 7,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "uuidv4"
+          ]
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\infrastructure\\transaction-repository.ts": {
+      "hash": "9d45a53d6e54c53bee274fa9c2173f697084c4c623242855110a888bfff5f966",
+      "imports": [
+        {
+          "module": "../domain/transaction",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Transaction"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\transaction"
+        },
+        {
+          "module": "../domain/repositories",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "ITransactionRepository"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\repositories"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\infrastructure\\notification-service.ts": {
+      "hash": "c95b0df4756dbc19c8d92cd57f99fe6609f63a3fb75816d56e5c8aba0e729a90",
+      "imports": [
+        {
+          "module": "../application/notification-service",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "INotificationService"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\application\\notification-service"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\infrastructure\\account-repository.ts": {
+      "hash": "13a108a317c512261bd49026ccde357efdc20c23bd1bceb10546e1359a552c61",
+      "imports": [
+        {
+          "module": "../domain/account",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Account"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\account"
+        },
+        {
+          "module": "../domain/repositories",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "IAccountRepository"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\repositories"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\api\\server.ts": {
+      "hash": "d8a476a8122269493e38abde18faf2ac436daced7b8c50464b5093f563689b86",
+      "imports": [
+        {
+          "module": "express",
+          "line": 2,
+          "column": 0,
+          "isRelative": false,
+          "importedNames": [
+            "express"
+          ],
+          "isDefault": true
+        },
+        {
+          "module": "../application/account-service",
+          "line": 3,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "AccountService"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\application\\account-service"
+        },
+        {
+          "module": "../application/transfer-service",
+          "line": 4,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "TransferService"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\application\\transfer-service"
+        },
+        {
+          "module": "../infrastructure/account-repository",
+          "line": 5,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "InMemoryAccountRepository"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\infrastructure\\account-repository"
+        },
+        {
+          "module": "../infrastructure/transaction-repository",
+          "line": 6,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "InMemoryTransactionRepository"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\infrastructure\\transaction-repository"
+        },
+        {
+          "module": "../infrastructure/notification-service",
+          "line": 7,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "ConsoleNotificationService"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\infrastructure\\notification-service"
+        },
+        {
+          "module": "../shared/money",
+          "line": 8,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "Money"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\shared\\money"
+        }
+      ]
+    },
+    "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\domain\\violation.ts": {
+      "hash": "e2e4ce8e07e6f2d0078a7f991a95d3309c77b31eac4e2b153ced5fd2f805ab12",
+      "imports": [
+        {
+          "module": "../infrastructure/account-repository",
+          "line": 2,
+          "column": 0,
+          "isRelative": true,
+          "importedNames": [
+            "InMemoryAccountRepository"
+          ],
+          "resolvedPath": "D:\\npm\\intent-guard\\examples\\fintech-ledger\\src\\infrastructure\\account-repository"
+        }
+      ]
+    }
+  }
+}

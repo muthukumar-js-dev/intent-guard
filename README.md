@@ -4,13 +4,13 @@
 
 # Intent-Guard 🛡️
 
-**Deterministic Architectural Controller for AI-Assisted Coding**
+**Prevent AI from Breaking Your Architecture**
 
-[![npm version](https://badge.fury.io/js/intent-guard.svg)](https://www.npmjs.com/package/intent-guard)
-[![License: PROPRIETARY](https://img.shields.io/badge/License-PROPRIETARY-red.svg)](LICENSE)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org)
+Validate AI-generated code against architectural rules. Enforce layer boundaries, protect critical code, and catch violations before they reach your codebase.
 
-*Enforce architectural rules and prevent AI from breaking your codebase structure*
+[![npm version](https://badge.fury.io/js/intent-guard.svg)](https://www.npmjs.com/package/intent-guard) [![License: PROPRIETARY](https://img.shields.io/badge/License-PROPRIETARY-red.svg)](LICENSE) [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org) [![Sponsor](https://img.shields.io/badge/Sponsor-Buy%20Me%20A%20Coffee-yellow.svg)](https://buymeacoffee.com/muthukumar)
+
+*Works with Cursor, GitHub Copilot, Windsurf, and any AI coding assistant*
 
 </div>
 
@@ -18,11 +18,13 @@
 
 ## What is Intent-Guard?
 
-**Intent-Guard** is a validation tool that enforces architectural rules in codebases where AI writes code.
+**Intent-Guard** is an architectural validation tool for AI-assisted coding. It validates AI-generated code against rules you define, preventing violations before they reach your codebase.
 
-Think of it as a **guardrail system** for AI coding assistants (Cursor, GitHub Copilot, Windsurf, etc.). You define your project's architectural boundaries, and Intent-Guard validates that AI-generated code respects them.
+**The Problem**: AI coding assistants (Cursor, GitHub Copilot, Windsurf) don't understand your project's architecture. They import database code into UI components, modify protected payment logic, and violate layer boundaries.
 
-**In one sentence**: Intent-Guard prevents AI from breaking your architecture by validating code against rules you define.
+**The Solution**: Intent-Guard validates AI-generated code against architectural rules. If AI breaks your architecture, validation fails and the AI self-corrects.
+
+**Works with**: Any JavaScript/TypeScript project (React, Next.js, Vue, Angular, Express, Nest.js, and more).
 
 ---
 
@@ -64,7 +66,7 @@ Define architectural rules:
 
 ---
 
-## The Problem
+## Why You Need AI Code Validation
 
 AI coding assistants are powerful, but they don't understand your project's architecture:
 
@@ -93,7 +95,7 @@ The AI suggests `moment.js` when your team has standardized on `date-fns`.
 
 ---
 
-## What Intent-Guard DOES and DOES NOT Do
+## Preventing AI from Breaking Architecture
 
 ### ✅ DOES:
 
@@ -114,7 +116,7 @@ The AI suggests `moment.js` when your team has standardized on `date-fns`.
 
 ---
 
-## How Intent-Guard Works
+## How to Validate AI-Generated Code
 
 ```
 ┌─────────────────┐
@@ -159,7 +161,7 @@ pnpm add -D intent-guard
 
 ---
 
-## Quick Start (5 Minutes)
+## Quick Start: Validate AI Code in 5 Minutes
 
 ### 1. Initialize Intent-Guard
 
@@ -271,6 +273,30 @@ echo "npm run validate:diff" > .husky/pre-commit
 ```
 
 Now Intent-Guard runs automatically before every commit!
+
+---
+
+## When to Use Intent-Guard
+
+Use Intent-Guard if:
+- ✅ You use AI coding assistants (Cursor, GitHub Copilot, Windsurf)
+- ✅ Your project has defined architectural layers
+- ✅ You need to prevent AI from violating boundaries
+
+Don't use if:
+- ❌ Small scripts (< 100 lines of code)
+- ❌ One-off projects (throwaway code)
+- ❌ Projects without clear architecture
+
+### Comparison with Alternatives
+
+| Tool | Purpose | What It Validates |
+|------|---------|-------------------|
+| **ESLint** | Code style | Syntax, formatting, best practices |
+| **TypeScript** | Type safety | Types, interfaces, null safety |
+| **Intent-Guard** | Architecture | Layer boundaries, protected code |
+
+**Best Practice**: Use Intent-Guard **together** with ESLint and TypeScript. They solve different problems.
 
 ---
 
@@ -714,15 +740,16 @@ npx intent-guard rules-for src/domain/user.ts
 1. **Add to your AI instructions**:
 
 ```
-Before generating code, run:
+# 1. Ask Intent-Guard for context about the file
 npx intent-guard rules-for <file-path>
 
-Then respect the architectural rules shown.
+# 2. Generate code that respects the architectural rules
 
-After generating code, run:
+# 3. Validate changes to ensure no rules were broken
 npx intent-guard validate --diff
 
-If validation fails, fix the violations and try again.
+# 4. If validation fails, fix the violations
+
 ```
 
 2. **Example AI Prompt**:
@@ -1333,6 +1360,22 @@ Intent-Guard is **not for everyone**. Skip it if:
 
 ---
 
+## FAQ
+
+### Q: Does this replace ESLint?
+**A**: No. ESLint checks for syntax and style errors. Intent-Guard checks for **architectural violations** (e.g., "Domain layer importing Infrastructure"). Use both together.
+
+### Q: Does it work with Python/Java?
+**A**: Currently, Intent-Guard validates **file structures and imports** for JavaScript/TypeScript projects only. Support for other languages is planned.
+
+### Q: Can I use it in a monorepo?
+**A**: Yes! You can define a global architecture in the root, or specific rules for each package.
+
+### Q: Is my code sent to the cloud?
+**A**: No. Intent-Guard runs **locally** on your machine. Your code never leaves your computer.
+
+---
+
 ## 🤝 Community, Feedback & Support
 
 We welcome feedback, questions, and contributions!
@@ -1349,7 +1392,7 @@ We welcome feedback, questions, and contributions!
 - **Ideas**: [Share in Discussions](https://github.com/muthu-kumar369/intent-guard/discussions/categories/ideas-proposals)
 
 ### 💖 Support This Project
-If Intent-Guard helps your team, consider [sponsoring the project](https://github.com/sponsors/muthu-kumar369) to support ongoing development and documentation.
+If Intent-Guard helps your team, consider [sponsoring the project](https://www.buymeacoffee.com/muthukumar) to support ongoing development and documentation.
 
 ---
 
@@ -1387,4 +1430,4 @@ Built with:
 
 **Made with ❤️ for developers building with AI**
 
-[⭐ Star on GitHub](https://github.com/muthu-kumar369/intent-guard) | [📦 View on npm](https://www.npmjs.com/package/intent-guard) | [💬 Discussions](https://github.com/muthu-kumar369/intent-guard/discussions)
+[⭐ Star on GitHub](https://github.com/muthu-kumar369/intent-guard) | [📦 View on npm](https://www.npmjs.com/package/intent-guard) | [💬 Discussions](https://github.com/muthu-kumar369/intent-guard/discussions) | [☕ Buy Me A Coffee](https://buymeacoffee.com/muthukumar)

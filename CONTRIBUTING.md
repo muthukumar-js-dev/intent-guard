@@ -33,3 +33,8 @@ Thank you for your interest in contributing to Intent-Guard!
 -   Please include a description of your changes.
 -   Run `npm test` before submitting.
 -   Updated documentation if you changed behavior.
+
+## Sponsorship
+
+If you find this project useful, please consider sponsoring:
+[☕ Buy Me A Coffee](https://buymeacoffee.com/muthukumar)
