@@ -1,5 +1,5 @@
 {
-  "name": "intent-guard",
+  "name": "intent-guard-core",
   "version": "0.1.0",
   "description": "Prevent AI coding assistants from breaking your architecture. Validates AI-generated code against layer boundaries, protected regions, and dependency rules.",
   "main": "dist/index.js",
