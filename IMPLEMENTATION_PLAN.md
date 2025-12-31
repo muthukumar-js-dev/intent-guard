@@ -717,7 +717,7 @@ if (!result.valid && result.aiFeedback) {
 **Step 1: Install**
 
 ```bash
-npm install --save-dev intent-guard
+npm install --save-dev intent-guard-core
 ```
 
 **Step 2: Initialize**

@@ -30,7 +30,7 @@ See original combined file for complete steps and release template.
 ## Success Criteria
 
 - ✅ Package published to npm
-- ✅ Can install via `npm install intent-guard`
+- ✅ Can install via `npm install intent-guard-core`
 - ✅ CLI works when installed
 - ✅ GitHub release created
 - ✅ Version is 0.1.0

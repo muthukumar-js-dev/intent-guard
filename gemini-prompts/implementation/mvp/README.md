@@ -188,7 +188,7 @@ The MVP is complete when:
 2. ✅ All unit tests pass (>90% coverage)
 3. ✅ All integration tests pass
 4. ✅ Package published to npm
-5. ✅ Can be installed: `npm install intent-guard`
+5. ✅ Can be installed: `npm install intent-guard-core`
 6. ✅ CLI works: `npx intent-guard validate`
 7. ✅ Documentation is complete
 
@@ -303,7 +303,7 @@ Before considering MVP complete:
 - [ ] CI/CD running
 - [ ] README complete
 - [ ] Example projects work
-- [ ] Can install: `npm install intent-guard`
+- [ ] Can install: `npm install intent-guard-core`
 - [ ] Can run: `npx intent-guard validate`
 
 ---

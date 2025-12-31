@@ -8,7 +8,7 @@
 
 Validate AI-generated code against architectural rules. Enforce layer boundaries, protect critical code, and catch violations before they reach your codebase.
 
-[![npm version](https://badge.fury.io/js/intent-guard.svg)](https://www.npmjs.com/package/intent-guard) [![License: PROPRIETARY](https://img.shields.io/badge/License-PROPRIETARY-red.svg)](LICENSE) [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org) [![Sponsor](https://img.shields.io/badge/Sponsor-Buy%20Me%20A%20Coffee-yellow.svg)](https://buymeacoffee.com/muthukumar)
+[![npm version](https://badge.fury.io/js/intent-guard-core.svg)](https://www.npmjs.com/package/intent-guard-core) [![License: PROPRIETARY](https://img.shields.io/badge/License-PROPRIETARY-red.svg)](LICENSE) [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org) [![Sponsor](https://img.shields.io/badge/Sponsor-Buy%20Me%20A%20Coffee-yellow.svg)](https://buymeacoffee.com/muthukumar)
 
 *Works with Cursor, GitHub Copilot, Windsurf, and any AI coding assistant*
 
@@ -148,13 +148,13 @@ The AI suggests `moment.js` when your team has standardized on `date-fns`.
 
 ```bash
 # npm
-npm install --save-dev intent-guard
+npm install --save-dev intent-guard-core
 
 # yarn
-yarn add --dev intent-guard
+yarn add --dev intent-guard-core
 
 # pnpm
-pnpm add -D intent-guard
+pnpm add -D intent-guard-core
 ```
 
 **Requirements**: Node.js >= 16.0.0
