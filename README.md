@@ -8,9 +8,9 @@
 
 Validate AI-generated code against architectural rules. Enforce layer boundaries, protect critical code, and catch violations before they reach your codebase.
 
-[![npm version](https://badge.fury.io/js/intent-guard-core.svg)](https://www.npmjs.com/package/intent-guard-core) [![License: PROPRIETARY](https://img.shields.io/badge/License-PROPRIETARY-red.svg)](LICENSE) [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org) [![Documentation](https://img.shields.io/badge/docs-live-blue.svg)](https://muthu-kumar369.github.io/intent-guard/) [![Sponsor](https://img.shields.io/badge/Sponsor-Buy%20Me%20A%20Coffee-yellow.svg)](https://buymeacoffee.com/muthukumar)
+[![npm version](https://badge.fury.io/js/intent-guard-core.svg)](https://www.npmjs.com/package/intent-guard-core) [![License: PROPRIETARY](https://img.shields.io/badge/License-PROPRIETARY-red.svg)](LICENSE) [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org) [![Documentation](https://img.shields.io/badge/docs-live-blue.svg)](https://muthukumar-js-dev.github.io/intent-guard/) [![Sponsor](https://img.shields.io/badge/Sponsor-Buy%20Me%20A%20Coffee-yellow.svg)](https://buymeacoffee.com/muthukumar)
 
-📚 **[Read the Full Documentation](https://muthu-kumar369.github.io/intent-guard/)** | 🚀 **[Quick Start Guide](https://muthu-kumar369.github.io/intent-guard/guide/getting-started)**
+📚 **[Read the Full Documentation](https://muthukumar-js-dev.github.io/intent-guard/)** | 🚀 **[Quick Start Guide](https://muthukumar-js-dev.github.io/intent-guard/guide/getting-started)**
 
 *Works with Cursor, GitHub Copilot, Windsurf, and any AI coding assistant*
 
@@ -1358,7 +1358,7 @@ Intent-Guard is **not for everyone**. Skip it if:
 - Performance improvements for large codebases
 - Enhanced monorepo features (workspace-aware validation, cross-package rules)
 
-**Want to influence the roadmap?** [Share your ideas in Discussions](https://github.com/muthu-kumar369/intent-guard/discussions/categories/ideas-proposals)
+**Want to influence the roadmap?** [Share your ideas in Discussions](https://github.com/muthukumar-js-dev/intent-guard/discussions/categories/ideas-proposals)
 
 ---
 
@@ -1383,15 +1383,15 @@ Intent-Guard is **not for everyone**. Skip it if:
 We welcome feedback, questions, and contributions!
 
 ### 🐞 Found a Bug?
-[Report a bug](https://github.com/muthu-kumar369/intent-guard/issues/new?template=bug_report.yml) with reproduction steps and your configuration.
+[Report a bug](https://github.com/muthukumar-js-dev/intent-guard/issues/new?template=bug_report.yml) with reproduction steps and your configuration.
 
 ### 💡 Have a Feature Idea?
-[Request a feature](https://github.com/muthu-kumar369/intent-guard/issues/new?template=feature_request.yml) describing the problem you're trying to solve.
+[Request a feature](https://github.com/muthukumar-js-dev/intent-guard/issues/new?template=feature_request.yml) describing the problem you're trying to solve.
 
 ### ❓ Questions or Feedback?
-- **Quick questions**: [Ask here](https://github.com/muthu-kumar369/intent-guard/issues/new?template=question.yml)
-- **Discussions**: [Join the conversation](https://github.com/muthu-kumar369/intent-guard/discussions)
-- **Ideas**: [Share in Discussions](https://github.com/muthu-kumar369/intent-guard/discussions/categories/ideas-proposals)
+- **Quick questions**: [Ask here](https://github.com/muthukumar-js-dev/intent-guard/issues/new?template=question.yml)
+- **Discussions**: [Join the conversation](https://github.com/muthukumar-js-dev/intent-guard/discussions)
+- **Ideas**: [Share in Discussions](https://github.com/muthukumar-js-dev/intent-guard/discussions/categories/ideas-proposals)
 
 ### 💖 Support This Project
 If Intent-Guard helps your team, consider [sponsoring the project](https://www.buymeacoffee.com/muthukumar) to support ongoing development and documentation.
@@ -1432,4 +1432,4 @@ Built with:
 
 **Made with ❤️ for developers building with AI**
 
-[⭐ Star on GitHub](https://github.com/muthu-kumar369/intent-guard) | [📦 View on npm](https://www.npmjs.com/package/intent-guard) | [💬 Discussions](https://github.com/muthu-kumar369/intent-guard/discussions) | [☕ Buy Me A Coffee](https://buymeacoffee.com/muthukumar)
+[⭐ Star on GitHub](https://github.com/muthukumar-js-dev/intent-guard) | [📦 View on npm](https://www.npmjs.com/package/intent-guard) | [💬 Discussions](https://github.com/muthukumar-js-dev/intent-guard/discussions) | [☕ Buy Me A Coffee](https://buymeacoffee.com/muthukumar)

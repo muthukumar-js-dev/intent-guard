@@ -313,18 +313,18 @@ npx intent-guard rules-for src/your-file.ts
 ## Getting Help
 
 ### 🐞 Found a Bug?
-[Report a bug](https://github.com/muthu-kumar369/intent-guard/issues/new?template=bug_report.yml) with:
+[Report a bug](https://github.com/muthukumar-js-dev/intent-guard/issues/new?template=bug_report.yml) with:
 - Your `intent.config.yaml`
 - The command you ran
 - The error message
 - Your project structure
 
 ### ❓ Have a Question?
-- [Ask in Discussions](https://github.com/muthu-kumar369/intent-guard/discussions)
-- [Quick questions](https://github.com/muthu-kumar369/intent-guard/issues/new?template=question.yml)
+- [Ask in Discussions](https://github.com/muthukumar-js-dev/intent-guard/discussions)
+- [Quick questions](https://github.com/muthukumar-js-dev/intent-guard/issues/new?template=question.yml)
 
 ### 💡 Feature Request?
-[Request a feature](https://github.com/muthu-kumar369/intent-guard/issues/new?template=feature_request.yml)
+[Request a feature](https://github.com/muthukumar-js-dev/intent-guard/issues/new?template=feature_request.yml)
 
 ## Common Workarounds
 

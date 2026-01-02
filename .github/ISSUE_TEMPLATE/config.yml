@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: 💬 GitHub Discussions
-    url: https://github.com/muthu-kumar369/intent-guard/discussions
+    url: https://github.com/muthukumar-js-dev/intent-guard/discussions
     about: For open-ended feedback, ideas, or general questions, please use Discussions instead of opening an issue.
   - name: 📖 Documentation
-    url: https://github.com/muthu-kumar369/intent-guard#readme
+    url: https://github.com/muthukumar-js-dev/intent-guard#readme
     about: Check the README for usage guides and examples.

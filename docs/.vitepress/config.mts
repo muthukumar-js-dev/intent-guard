@@ -9,7 +9,7 @@ export default defineConfig({
             { text: 'Home', link: '/' },
             { text: 'Get Started', link: '/guide/getting-started' },
             { text: 'Docs', link: '/introduction/' },
-            { text: 'GitHub', link: 'https://github.com/muthu-kumar369/intent-guard' }
+            { text: 'GitHub', link: 'https://github.com/muthukumar-js-dev/intent-guard' }
         ],
 
         sidebar: [
@@ -51,7 +51,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/muthu-kumar369/intent-guard' }
+            { icon: 'github', link: 'https://github.com/muthukumar-js-dev/intent-guard' }
         ],
 
         search: {
@@ -68,6 +68,6 @@ export default defineConfig({
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:locale', content: 'en_US' }],
         ['meta', { property: 'og:site_name', content: 'Intent Guard' }],
-        ['meta', { property: 'og:image', content: 'https://muthu-kumar369.github.io/intent-guard/og-image.png' }],
+        ['meta', { property: 'og:image', content: 'https://muthukumar-js-dev.github.io/intent-guard/og-image.png' }],
     ]
 })

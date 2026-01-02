@@ -8,7 +8,7 @@ body:
       value: |
         Have a question or feedback? We're here to help!
         
-        **Note**: For open-ended discussions or early ideas, consider using [GitHub Discussions](https://github.com/muthu-kumar369/intent-guard/discussions) instead.
+        **Note**: For open-ended discussions or early ideas, consider using [GitHub Discussions](https://github.com/muthukumar-js-dev/intent-guard/discussions) instead.
 
   - type: textarea
     id: question

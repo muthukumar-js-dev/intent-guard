@@ -11,7 +11,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: View on GitHub
-      link: https://github.com/muthu-kumar369/intent-guard
+      link: https://github.com/muthukumar-js-dev/intent-guard
 
 features:
   - title: Layer Boundaries
