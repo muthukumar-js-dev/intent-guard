@@ -12,4 +12,6 @@ An ADR is a document that captures an important architectural decision made alon
 
 ## Index
 
-* [0001-record-architecture-decisions.md](./0001-record-architecture-decisions.md)
+
+(No ADRs recorded yet)
+

@@ -8,7 +8,9 @@
 
 Validate AI-generated code against architectural rules. Enforce layer boundaries, protect critical code, and catch violations before they reach your codebase.
 
-[![npm version](https://badge.fury.io/js/intent-guard-core.svg)](https://www.npmjs.com/package/intent-guard-core) [![License: PROPRIETARY](https://img.shields.io/badge/License-PROPRIETARY-red.svg)](LICENSE) [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org) [![Sponsor](https://img.shields.io/badge/Sponsor-Buy%20Me%20A%20Coffee-yellow.svg)](https://buymeacoffee.com/muthukumar)
+[![npm version](https://badge.fury.io/js/intent-guard-core.svg)](https://www.npmjs.com/package/intent-guard-core) [![License: PROPRIETARY](https://img.shields.io/badge/License-PROPRIETARY-red.svg)](LICENSE) [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org) [![Documentation](https://img.shields.io/badge/docs-live-blue.svg)](https://muthu-kumar369.github.io/intent-guard/) [![Sponsor](https://img.shields.io/badge/Sponsor-Buy%20Me%20A%20Coffee-yellow.svg)](https://buymeacoffee.com/muthukumar)
+
+📚 **[Read the Full Documentation](https://muthu-kumar369.github.io/intent-guard/)** | 🚀 **[Quick Start Guide](https://muthu-kumar369.github.io/intent-guard/guide/getting-started)**
 
 *Works with Cursor, GitHub Copilot, Windsurf, and any AI coding assistant*
 

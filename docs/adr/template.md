@@ -1,6 +1,6 @@
 # [Short Title]
 
-* Status: [proposed | rejected | accepted | deprecated | … | superseded by [ADR-0005](0005-example.md)]
+* Status: [proposed | rejected | accepted | deprecated | … | superseded by ADR-0005]
 * Deciders: [list everyone involved in the decision]
 * Date: [YYYY-MM-DD]
 
